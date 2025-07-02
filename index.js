@@ -9,7 +9,7 @@ const port = 5000;
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://grocery-dun.vercel.app/',
+  origin: 'https://grocery-dun.vercel.app',
   credentials: true
 }));
 
