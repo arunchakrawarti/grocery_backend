@@ -1,35 +1,3 @@
-// const express = require('express');
-// const cors = require('cors')
-// const cookieParser = require('cookie-parser')
-// const dotenv = require('dotenv')
-// dotenv.config();
-// const app = express()
-// const port = 5173;
-
-// app.use(express.json());
-// app.use(cors())
-// app.use(cookieParser());
-
-// const userrouter = require('./routes/userroute')
-// const sellerroute = require('./routes/sellerroute')
-// const connection = require('./db');
-// const connectCloudinary = require('./cloudinary');
-// connection()
-// connectCloudinary();
-
-
-// app.use('/api/user',userrouter)
-// app.use('/api/seller',sellerroute)
-
-// app.get('/',(req,res)=>{
-//     res.send("welcome page");
-// })
-
-
-// app.listen(port,()=>{
-//     console.log(`server is running on port ${port}`)
-// })
-
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
@@ -83,18 +51,6 @@ app.get('/api/seller/is-auth', (req, res) => {
   // console.log(req.cookies); // ✅ See if token is coming in
 });
 
-// app.post('/api/cart/update',authUser, (req, res) => {
-//   console.log("🍪 Cookies:", req.cookies);
-//   console.log("📦 Body:", req.body);
-//   console.log("🧑‍💻 Headers:", req.headers);
-//   console.log(req.user)
-
-//   res.status(200).json({ success: true, message: "Logged request data" });
-// });
-
-
-
-// console.log(req.cookies)
 
 
 app.listen(port, () => {
